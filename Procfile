@@ -1,0 +1,1 @@
+web: gunicorn pricer:APP -t 120
