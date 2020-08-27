@@ -34,5 +34,5 @@ async def visual():
                     margin={"r":1,"t":1,"l":1,"b":1})
 
       # Show Graphic
-    fig.show();
+    # fig.show();
     return fig.to_json()

@@ -18,3 +18,7 @@ def test_invalid_input():
     body = response.json()
     assert response.status_code == 404
     assert body["detail"] == "State code ZZ not found"
+
+
+# python string_tests.py -v
+# run the above line when ready
