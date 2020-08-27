@@ -14,7 +14,8 @@ df = pd.read_csv(fd)
 @router.get('/map')
 async def visual():
     """
-    this takes the cleaned NYC rental dataset in csv format and makes interactive heatmap 
+    this takes the cleaned NYC rental dataset in
+    csv format and makes interactive heatmap 
 
     ### Response
     JSON string to render with react-plotly.js
