@@ -17,9 +17,9 @@ pandas = "*"
 uvicorn = "*"
 plotly = "*"
 jupyterlab = "*"
-black = "*"
 joblib = "*"
 sklearn = "*"
+black = "==20.8b1"
 
 [requires]
 python_version = "3.8"

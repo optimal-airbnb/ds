@@ -69,7 +69,3 @@ rlist2 = X["Room_type"].unique()
 RoomTypeDict = {}
 for i in range(len(rlist1)):
     RoomTypeDict[rlist1[i]] = rlist2[i]
-
-print(BoroughDict["Brooklyn"])
-print(NeighbourhoodDict["Kensington"])
-print(RoomTypeDict)
