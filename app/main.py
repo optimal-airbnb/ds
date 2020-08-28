@@ -6,7 +6,7 @@ from app.api import predict, viz
 
 app = FastAPI(
     title="Optimal AirBnB API",
-    description="Outputs the rental price prediciton in JSON format",
+    description="Outputs the rental price prediction and a plotly heatmap in JSON format",
     version="0.1",
     docs_url="/",
 )
