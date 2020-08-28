@@ -70,6 +70,7 @@ RoomTypeDict = {}
 for i in range(len(rlist1)):
     RoomTypeDict[rlist1[i]] = rlist2[i]
 
-print(BoroughDict["Brooklyn"])
-print(NeighbourhoodDict["Kensington"])
-print(RoomTypeDict)
+if __name__ == "__main__":    
+    print(BoroughDict["Brooklyn"])
+    print(NeighbourhoodDict["Kensington"])
+    print(RoomTypeDict)

@@ -1,8 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
-from app.api import viz
-from app.api import predict
+from app.api import viz, predict
 
 app = FastAPI(
     title="Optimal AirBnB API",
