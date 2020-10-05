@@ -1,20 +1,17 @@
 from fastapi.testclient import TestClient
-
+import sys
+sys.path.append("./")
 from app.main import app
 
 client = TestClient(app)
 
 
-def test_valid_input():
-    """Return 200 Success for valid 2 character US state postal code."""
-    response = client.get("/viz/IL")
+def test_viz():
+    """Return 200 Success if response is fig.json file"""
+    response = client.get("/map")
     assert response.status_code == 200
-    assert "Illinois Unemployment Rate" in response.text
+    assert isinstance(response, object)
 
-
-def test_invalid_input():
-    """Return 404 if the endpoint isn't valid US state postal code."""
-    response = client.get("/viz/ZZ")
-    body = response.json()
-    assert response.status_code == 404
-    assert body["detail"] == "State code ZZ not found"
+test_viz()
+# python app\tests\test_viz.py -v
+# run the above line
